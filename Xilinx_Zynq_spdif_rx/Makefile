@@ -1,0 +1,12 @@
+snd-soc-adi-axi-i2s-objs := axi-i2s.o
+snd-soc-adi-axi-spdif-objs := axi-spdif.o
+snd-soc-adrv936x-box-objs := adrv936x_box.o
+snd-soc-xilinx_spdif_rx-objs := xilinx_spdif_rx.o
+
+
+obj-$(CONFIG_SND_SOC_ADI_AXI_I2S) += snd-soc-adi-axi-i2s.o
+obj-$(CONFIG_SND_SOC_ADI_AXI_SPDIF) += snd-soc-adi-axi-spdif.o
+
+obj-$(CONFIG_SND_SOC_ADRV936X_BOX) += snd-soc-adrv936x-box.o
+obj-y += snd-soc-xilinx_spdif_rx.o
+obj-y += xilinx_snd.o
