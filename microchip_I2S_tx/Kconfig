@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config SND_SIMPLE_I2S_SOC
+	tristate "simple I2s soc"
+	help
+	  simple I2s control and dma driver.
+
+config SND_SIMPLE_I2S
+	tristate "simple I2s support"
+	depends on SND_SIMPLE_I2S_SOC
+	help
+	  AXI-I2S support.

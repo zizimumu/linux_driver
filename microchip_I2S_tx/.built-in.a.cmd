@@ -1,0 +1,1 @@
+cmd_sound/soc/microchip/built-in.a := echo >/dev/null; rm -f sound/soc/microchip/built-in.a; /home/emy/PolarFire/toolchain/bin/riscv64-unknown-linux-gnu-ar cDPrST sound/soc/microchip/built-in.a sound/soc/microchip/mx_i2s.o sound/soc/microchip/axi_dma.o sound/soc/microchip/mikroe-proto.o
