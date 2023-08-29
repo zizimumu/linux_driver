@@ -1,0 +1,18 @@
+
+
+
+tc0: tc@e0800000 {
+	compatible = "microchip,tc-capture";
+	reg = <0xe0800000 0x4000>;
+	clocks = <&pmc PMC_TYPE_PERIPHERAL 91>;
+	interrupts = <GIC_SPI 91 IRQ_TYPE_LEVEL_HIGH>;
+	// pinctrl-names = "default";
+	// pinctrl-0 = <&pinctrl_tc_capture_default>;
+	status = "disabled";
+
+};
+
+pinctrl_tc_capture_default: tc_capture_default {
+	pinmux = <PIN_PE4__TIOA3>;
+	bias-pull-up;
+};
